@@ -3,6 +3,9 @@
 <head>
 	<meta charset ="UTF-8">
 	<script src="https://kit.fontawesome.com/40eda68d07.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,19 +39,41 @@
                 <span>Settings</span>
             </a>
         </div>  
-
-		<button type="button"><i class="fas fa-sign-out-alt"></i>Log out</button>
+        <div>    
+            <a href="#" class="nav-link logout">
+                <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+                <span>Log out</span>
+            </a>
+        </div>  
 	</div>
 
-	<div id= "middle"> <h2 class="weather"> <i class="fas fa-cloud-sun"></i>Today's Highlights </h2>
+	<div id= "middle"> <p id="textsection2" class="text2">Today's Highlights</p>
+        <button id="menu"><i class="fa fa-ellipsis-h  text-2" aria-hidden="true"></i></button>
 		<div class ="container2">
-		  <div><main>UV Index </main><img src="img/uv.png" alt="uv" height="60" width="80"/></div>
-		   <div><main>Sunrise & Sunset </main><br><i class="fas fa-arrow-alt-circle-up"></i>5:39AM <br><br>
-		   	<i class="fas fa-arrow-alt-circle-down"></i>6:45PM</div>
-		   <div><main>Wind Status </main><br> <h5 class="titlee">16</h5>km/h <br> <i class="fas fa-compass"></i>WSW</div>
-		   <div><main>Visibility</main><br><h5 class="titlee">12</h5>km <br> Average</div>
-		   <div><main> Humidity </main><br><h5 class="titlee">40%</h5> <br> Normal</div>
-		  <div><main>Air Quality</main><br><h5 class="titlee">33</h5> <br> Good</div>
+		  <div><main>UV Index </main><img src="img/uv.png" alt="uv" height="70" width="120" style="margin-left:7px;"/></div>
+		   <div><main>Sunrise & Sunset </main><i class="fas fa-arrow-alt-circle-up"></i>5:39AM <p class="card2">-1m 46s</p>
+		   	<i class="fas fa-arrow-alt-circle-down"></i>6:45PM<p class="card2">+2m 22s</p>
+        </div>
+		   <div>
+               <main>Wind Status </main> 
+               <p class="middle-mid"><h5 class="titlee">16</h5> km/h </p>
+               <p class="middle-end"><i class="fas fa-compass"></i>WSW</p>
+            </div>
+		   <div>
+               <main>Visibility</main>
+               <p class="middle-mid"><h5 class="titlee">12</h5> km</p>
+               <p class="middle-end">Average</p>
+            </div>
+		   <div>
+               <main> Humidity </main>
+               <p class="middle-mid"><h5 class="titlee">40%</h5>  </p>
+               <p class="middle-end">Normal</p>
+            </div>
+		  <div>
+              <main>Air Quality</main>
+              <p class="middle-mid"><h5 class="titlee">33</h5>  </p>
+              <p class="middle-end">Good</p>
+            </div>
 		</div></div>
     
     <div class="card col-4">
@@ -61,35 +86,35 @@
             <p id="date">Mon,19 Aug</p>
             
         </div>
-        
-        <h3>Cloudy<span>Wind 10km/h <span class="dot">•</span> Precip 0%</span></h3>
-        
         <img src="img/cloud3.png" alt="cloud3" id="img-left"><h1>23°</h1>
-        
-        <table>
-            <tr>
-                <td>TUE</td>
-                <td>WED</td>
-                <td>THU</td>
-                <td>FRI</td>
-                <td>SAT</td>
-            </tr>
-            <tr>
-                <td>30°</td>
-                <td>34°</td>
-                <td>36°</td>
-                <td>34°</td>
-                <td>37°</td>
-            </tr>
-            <tr>
-                <td>17°</td>
-                <td>22°</td>
-                <td>19°</td>
-                <td>23°</td>
-                <td>19°</td>
-            </tr>
-        </table>
-    </div>
+        <div class="line-5">
+            <img src="img/weather-1.png" alt="wind-speed" class="weathers">
+            <img src="img/weather-2.png" alt="humidity" class="weathers">
+            <img src="img/weather-3.png" alt="rainfall" class="weathers">
+            <pre>16km/h      40%       10%</pre>   
+        </div>
+        <div class="line-6">
+            <p id="line6text">Today<span id="line6righttext">Next 4 Days</span></p>
+        </div>
+
+        <div class="line-7">
+            <div class="line-7-items">
+                <p id="time"><b>Now</b></p>
+                <p>19<sup>o</sup>C</p>
+            </div>
+            <div class="line-7-items">
+                <p id="time"><b>11:00</b></p>
+                <p>18<sup>o</sup>C</p>
+            </div>
+            <div class="line-7-items">
+                <p id="time"><b>12:00</b></p>
+                <p>18<sup>o</sup>C</p>
+            </div>
+            <div class="line-7-items">
+                <p id="time"><b>13:00</b></p>
+                <p>20<sup>o</sup>C</p>
+            </div>
+        </div>
 
 
 
